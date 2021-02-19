@@ -21,7 +21,6 @@ input[type=text]{
   {
       border: solid;
       border-width: 1px;
-
       
   }
   #col2
@@ -39,7 +38,7 @@ input[type=text]{
   }
   .cancelbtn{
     width: 40%;
-    padding: 7px 10px;\
+    padding: 7px 10px;
   }
   .loginbtn{
     width: 20%;
