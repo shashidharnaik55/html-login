@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <h1 align="center">Login Portal</h1>
+    <div class="container">
+     
+      <div class="row">
+          <div id ="col1"class="col">
+              <h4>Sign in</h4>
+            <p>Please enter the credentails to login.</p>
+ <hr>
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" required> <br>
+            <label>Password:</label>
+            <input type="text" placeholder="Enter Password" name="password" required><br>
+            
+            <label>
+                <input type="checkbox" checked="checked" name="remember" > Remember me
+              </label>
+            <button type="submit" class="loginbtn btn-success">Sign in</button>
+
+
+          </div>
+          <div id ="col2"class="col" >
+            <h4>Sign up</h4>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <div class="row">
+             <div class="col-sm">
+                <label>First Name:</label><br>
+                <input type="text" placeholder="Enter your first name" name="name" required><br>
+                <label>Email:</label><br>
+                <input type="text" placeholder="Enter Email" name="email" required><br>
+                <label>Username:</label><br>
+                <input type="text" placeholder="Enter Username" name="username" required> <br>
+                 <label>Password:</label><br>
+                 <input type="text" placeholder="Enter Password" name="password" required><br>
+                 <button type="submit" class="signupbtn btn-success">Sign up</button>
+            </div>
+
+            <div class="col-sm">
+            <label>Last Name:</label><br>
+            <input type="text" placeholder="Enter your last name" name="username" required> <br>
+            <label>Contact Number:</label><br>
+            <input type="text" placeholder="Enter contact number" name="phone" required> <br>
+            <label>Alternate contact Number:</label><br>
+            <input type="text" placeholder="Enter alternate number" name="phone" required> <br>
+            <label>Confirm Password:</label><br>
+            <input type="text" placeholder="Enter Password" name="password" required><br>
+            
+            <button type="button" class="cancelbtn btn-danger">Cancel </button>
+        </div>
+        </div>
+            
+            
+          </div>
+      </div>
+      <hr>
+    </div>
+</form>
+</body>
+</html>
