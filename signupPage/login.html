@@ -9,6 +9,9 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+  
+ </script> 
+    
 </head>
 <body>
     <form action="">
@@ -24,14 +27,18 @@
             <p>Please enter the credentails to login.</p>
  <hr>
             <label>Username:</label>
-            <input type="text" placeholder="Enter Username" name="username" required> <br>
+            <input type="text" placeholder="Enter Username" name="username" id="logusernames" required>
+            <h5 id="logusercheck"  > 
+              **Username is missing </h5> <br>
             <label>Password:</label>
-            <input type="password" placeholder="Enter Password" name="password" required><br>
-            
+            <input type="password" placeholder="Enter Password" name="password" id="logpassword"required>
+            <h5 id="logpasscheck"> 
+              **Please Fill the password 
+            </h5> <br>
             <label>
                 <input type="checkbox" checked="checked" name="remember" > Remember me
               </label>
-            <button type="submit" class="loginbtn btn-success">Sign in</button>
+            <button type="submit" id="loginbtn" class="loginbtn btn-success">Sign in</button>
           </div> <!-- Sign In End-->
 
           <!-- Sign up -->
@@ -44,12 +51,20 @@
                 <label>First Name:</label><br>
                 <input type="text" placeholder="Enter your first name" name="name" required><br>
                 <label>Email:</label><br>
-                <input type="text" placeholder="Enter Email" name="email" required><br>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <h5 id="mailcheck" > 
+                  **Please enter valid mail id</h5>
+                <br>
                 <label>Username:</label><br>
-                <input type="text" placeholder="Enter Username" name="username" required> <br>
-                 <label>Password:</label><br>
-                 <input type="password" placeholder="Enter Password" name="password" required><br>
-                 <button type="submit" class="signupbtn btn-success">Sign up</button>
+                <input type="text" placeholder="Enter Username" name="username" id="usernames" required>
+                <h5 id="usercheck"  > 
+                  **Username is missing </h5> <br>
+                <label>Password:</label><br>
+                 <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                 <h5 id="passcheck"> 
+                  **Please Fill the password 
+                </h5> <br>
+                 <button type="submit" id="submitbtn" class="signupbtn btn-success">Sign up</button>
             </div>
 
             <div class="col-sm">
@@ -57,10 +72,13 @@
             <input type="text" placeholder="Enter your last name" name="username" required> <br>
             <label>Contact Number:</label><br>
             <input type="text" placeholder="Enter contact number" name="phone" required> <br>
-            <label>Alternate contact Number:</label><br>
+            <label>Alternate Contact Number:</label><br>
             <input type="text" placeholder="Enter alternate number" name="phone" required> <br>
             <label>Confirm Password:</label><br>
-            <input type="password" placeholder="Enter Password" name="password" required><br>
+            <input type="password" placeholder="Enter Password" name="password"  id="conpassword" required>
+            <h5 id="conpasscheck"> 
+              **Password didn't match 
+          </h5> <br>
             
             <button type="button" class="cancelbtn btn-danger">Cancel </button>
         </div>
@@ -72,5 +90,7 @@
       <hr>
     </div>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="validation.js"></script>
 </body>
 </html>
